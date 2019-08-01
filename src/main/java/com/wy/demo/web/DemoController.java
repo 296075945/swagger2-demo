@@ -64,7 +64,7 @@ class AddUserResultVO {
 		this.msg = msg;
 	}
 
-	@ApiModelProperty(value = "结果状态", position = 1 ,example = "200")
+	@ApiModelProperty(value = "结果状态", position = 1 ,example = "200" ,allowableValues = "200,500")
 	private Integer status;
 	@ApiModelProperty(value = "结果信息", position = 2 ,example = "添加成功")
 	private String msg;
