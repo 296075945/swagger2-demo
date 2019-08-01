@@ -3,12 +3,12 @@ package com.wy.demo.web;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
-@ApiModel(description = "结果")
+@ApiModel(description = "统一返回结果")
 public class ResultVO<T> {
 
-	@ApiModelProperty(value = "结果状态",position = 1)
+	@ApiModelProperty(value = "结果状态",position = 1,example = "200")
 	private Integer status;
-	@ApiModelProperty(value = "消息",position = 2)
+	@ApiModelProperty(value = "结果信息",position = 2 ,example = "请求成功")
 	private String msg;
 	@ApiModelProperty(value = "结果数据",position = 3)
 	private T data;
